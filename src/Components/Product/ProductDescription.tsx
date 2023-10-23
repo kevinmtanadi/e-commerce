@@ -17,12 +17,22 @@ const ProductDescription = ({description, length}: Props) => {
       return str;
     }
 
-  return (
-    <VStack alignItems={'start'}>
-        <Text>{isShorten ? shortenString(description, length) : description}</Text>
-        <Button onClick={() => setIsShorten(!isShorten)}>{isShorten ? 'Read More' : 'Read Less'}</Button>
-    </VStack>
-  )
+    const text = isShorten ? shortenString(description, length) : description;
+    const lines = text.split('\n');
+    
+
+    return (
+        <VStack alignItems={'start'}>
+            {lines.map((line, index) => (
+                <React.Fragment key={index}>
+                    {line}
+                    {index !== lines.length - 1 && <br />
+                    }
+                </React.Fragment>
+            ))}
+            <Button onClick={() => setIsShorten(!isShorten)}>{isShorten ? 'Read More' : 'Read Less'}</Button>
+        </VStack>
+    )
 }
 
 export default ProductDescription

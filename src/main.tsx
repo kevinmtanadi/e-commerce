@@ -8,6 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Product from './Pages/Product/Product.tsx'
+import Store from './Pages/Store/Store.tsx'
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,11 @@ const router = createBrowserRouter([
   {
     path:"/product/:product_id",
     element: <Product />,
-  }
+  },
+  {
+    path:"/store/:store_id",
+    element: <Store />,
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
