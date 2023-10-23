@@ -11,7 +11,6 @@ import Product from './Pages/Product/Product.tsx'
 import Store from './Pages/Store/Store.tsx'
 
 
-
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ChakraProvider>
