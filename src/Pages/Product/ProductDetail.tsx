@@ -1,5 +1,4 @@
 import { VStack, Image, Heading } from '@chakra-ui/react'
-import React from 'react'
 import asus from "../../assets/rog_strix.jpeg"
 import Rating from '../../Components/Rating'
 import Money from '../../Components/Money'

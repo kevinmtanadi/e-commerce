@@ -1,5 +1,4 @@
-import { Grid, GridItem, Image } from '@chakra-ui/react'
-import React from 'react'
+import { Grid, GridItem } from '@chakra-ui/react'
 
 const item = {
   id: "asus_rog_strix_g15",

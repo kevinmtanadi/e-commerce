@@ -1,5 +1,4 @@
 import { HStack, Icon, Box } from '@chakra-ui/react'
-import React from 'react'
 import { AiFillStar } from 'react-icons/ai'
 
 
